@@ -4,7 +4,7 @@ public class Professor {
     private String nome;
     private String disciplina;
     private int salario;
-    private int id; // Adicionando o ID do professor
+    private int id; 
 
     // Construtor
     public Professor(int id, String nome, String disciplina, int salario) {

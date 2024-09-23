@@ -14,7 +14,7 @@ public class ProfessorServico {
     }
 
     public void adicionar(String nome, String disciplina, int salario) {
-        int id = gerarId(); // Método para obter o próximo ID
+        int id = gerarId(); 
         repositorio.adicionar(new Professor(id, nome, disciplina, salario));
     }
 
@@ -31,7 +31,7 @@ public class ProfessorServico {
     }
     
     private int gerarId() {
-        // Lógica para gerar um novo ID único. Por exemplo:
-        return repositorio.listar().size() + 1; // Simplesmente incrementa baseado no tamanho da lista
+        
+        return repositorio.listar().size() + 1; 
     }
 }

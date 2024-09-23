@@ -32,7 +32,7 @@ public class RepositorioProfessor {
         System.out.println("Professor com ID '" + id + "' não encontrado.");
     }
 
-    public boolean remover(int id) { // Retorna true se removido com sucesso
+    public boolean remover(int id) { 
         return professores.removeIf(professor -> professor.getId() == id);
     }
 }

@@ -131,7 +131,7 @@ public class mainteste2 {
     	   
     	   int salario = scanner.nextInt();
     	   
-    	   servico.adicionar(nome, disciplina, salario); // Chama o método de adicionar com os parâmetros corretos
+    	   servico.adicionar(nome, disciplina, salario); 
     	   servicoNotificacoes.adicionar("Novo professor adicionado: " + nome);
     	}
   
@@ -170,10 +170,10 @@ public class mainteste2 {
     	   
     	   int novoSalario = scanner.nextInt();
     	   
-    	   // Cria um novo objeto Professor com as novas informações
+    	  
     	   Professor professorAtualizado = new Professor(idAtualizar, novoNome, novaDisciplina, novoSalario);
     	   
-    	   servico.atualizar(idAtualizar, professorAtualizado); // Atualiza o professor no serviço
+    	   servico.atualizar(idAtualizar, professorAtualizado); 
     	   servicoNotificacoes.adicionar("Professor atualizado: " + novoNome);
     	}
 
@@ -182,12 +182,12 @@ public class mainteste2 {
         
         while (!scanner.hasNextInt()) {
             System.out.println("Por favor, insira um ID válido.");
-            scanner.next(); // Limpa a entrada inválida
+            scanner.next(); 
         }
         
         int idRemover = scanner.nextInt();
 
-        if (servico.remover(idRemover)) { // Método que retorna true se removido com sucesso
+        if (servico.remover(idRemover)) { 
             servicoNotificacoes.adicionar("Professor removido com ID: " + idRemover);
             System.out.println("Professor removido com sucesso!");
         } else {
